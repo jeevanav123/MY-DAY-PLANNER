@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Day Planner </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1> My Day Planner </h1>
+    <p style="text-align:center; font-style:italic; color:#555;">
+      "Jeevana add your tasks - here I will remind you"
+    </p>
+    
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Enter a new task..." />
+      <input type="time" id="timeInput" />
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="footer">
+      <span id="taskCounter">0 tasks left</span>
+      <button onclick="clearCompleted()">Clear Completed</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
